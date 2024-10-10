@@ -1,0 +1,45 @@
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set scrolloff=10
+
+let mapleader = " "
+
+" fast reload config
+nnoremap <leader>so :source C:\users\cuongnpm116\_vsvimrc<CR>
+
+nnoremap <leader>B :vsc Build.BuildSolution<CR>
+nmap <leader>tbp :vsc Debug.ToggleBreakpoint<CR>
+
+nmap <leader>w :w<CR>
+nnoremap <leader>q :q!<CR>
+nnoremap <leader>wq :wq<CR>
+nnoremap <leader>= :vsc Edit.FormatDocument<CR>
+
+nmap gd :vsc Edit.GoToDefinition<CR>
+nmap gi :vsc Edit.GoToImplementation<CR>
+nnoremap gp : vsc Edit.PeekDefinition <CR>
+
+nmap ]e :vsc Edit.GoToNextIssueinFile<CR>
+nmap [e :vsc Edit.GoToPreviousIssueinFile<CR>
+
+nnoremap H :vsc Window.PreviousTab<CR>
+nnoremap L :vsc Window.NextTab<CR>
+nnoremap K :vsc window.NextDocumentWindowNav<CR>
+
+nnoremap <leader>pf :vsc Edit.GoToFile<CR>
+nnoremap <leader>ca :vsc Window.CloseAllDocuments<CR>
+nnoremap <leader>e :vsc View.SolutionExplorer<CR>
+
+" yank and paste
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+yg_
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
