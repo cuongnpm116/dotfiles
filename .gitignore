@@ -1,5 +1,4 @@
-*.pkgdef
-./scoop/
-./gh/
-./nvim/lazy-lock.json
-./.glzr/glazewm/errors.log
+/scoop/
+/gh/
+/nvim/lazy-lock.json
+/.glzr/glazewm/errors.log
