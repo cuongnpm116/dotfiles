@@ -1,6 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.keymap.set('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'quit all' })
+
 -- disable the spacebar key's default behavior
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
@@ -22,14 +24,9 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', 'n', 'nzzzv', opts)
 vim.keymap.set('n', 'N', 'Nzzzv', opts)
 
--- buffers
-vim.keymap.set('n', '<leader>bd', '<cmd>bd<CR>', opts) -- close buffer (tab in vscode)
-vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts)
-vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts)
-
 -- window management
-vim.keymap.set('n', '<leader>v', '<C-w>v', opts)      -- split vertical
-vim.keymap.set('n', '<leader>h', '<C-w>s', opts)      -- split horizontal
+vim.keymap.set('n', '<leader>v', '<C-w>v', opts) -- split vertical
+vim.keymap.set('n', '<leader>h', '<C-w>s', opts) -- split horizontal
 vim.keymap.set('n', '<leader>xs', ':close<CR>', opts) -- close split window
 
 -- navigation between windows
@@ -48,3 +45,5 @@ vim.keymap.set('v', 'p', '"_dP', opts)
 -- diagnostic
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+
+vim.keymap.set('n', '<leader>bd', '<cmd>bd<CR>')
