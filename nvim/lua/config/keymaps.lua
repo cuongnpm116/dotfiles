@@ -8,7 +8,7 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 local opts = { noremap = true, silent = true }
 
-vim.keymap.set('n', '<leader>pv', '<cmd>:Ex<Cr>', opts)
+vim.keymap.set('n', '<leader>pv', '<cmd>Ex<cr>', opts)
 
 -- delete single character without yanking into register
 vim.keymap.set('n', 'x', '"_x', opts)

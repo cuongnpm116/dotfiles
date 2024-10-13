@@ -2,7 +2,6 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons',
     'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
-    'tpope/vim-fugitive',
     {
         -- Highlight todo, notes, etc in comments
         'folke/todo-comments.nvim',
