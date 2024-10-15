@@ -14,6 +14,8 @@ Set-PSReadLineOption -PredictionSource History
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 set-alias grep findstr
+Set-Alias tig "$env:UserProfile\scoop\apps\git\current\usr\bin\tig.exe"
+Set-Alias less "$env:UserProfile\scoop\apps\git\current\usr\bin\less.exe"
 
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |

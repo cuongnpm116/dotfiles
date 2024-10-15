@@ -7,6 +7,7 @@ vim.o.showmode = false
 
 vim.o.number = true
 vim.o.relativenumber = true
+vim.o.cursorline = false
 
 vim.o.breakindent = true
 vim.o.autoindent = true
