@@ -4,7 +4,7 @@ import-module posh-git
 import-module terminal-icons
 Import-Module PSFzf
 
-oh-my-posh --init --shell pwsh --config "$env:UserProfile\.config\powershell\takuya.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:UserProfile\.config\powershell\takuya.omp.json" | Invoke-Expression
 
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None

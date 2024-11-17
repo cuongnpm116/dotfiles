@@ -5,7 +5,7 @@ local config = {}
 
 config.font = wezterm.font("CaskaydiaMono Nerd Font")
 config.color_scheme = "Tokyo Night"
-config.window_background_opacity = 1
+config.window_background_opacity = 0.85
 config.default_prog = { "pwsh" }
 config.max_fps = 144
 config.hide_tab_bar_if_only_one_tab = true
@@ -110,5 +110,16 @@ config.keys = {
 		action = act.AdjustPaneSize({ "Right", 5 }),
 	},
 }
+
+wezterm.on("gui-startup", function(cmd)
+	local screen = wezterm.gui.screens().main
+	local ratio = 0.7
+	local width, height = screen.width * ratio, screen.height * ratio
+	local tab, pane, window = wezterm.mux.spawn_window(cmd or {
+		position = { x = (screen.width - width) / 2, y = (screen.height - height) / 2 },
+	})
+	-- window:gui_window():maximize()
+	window:gui_window():set_inner_size(width, height)
+end)
 
 return config
