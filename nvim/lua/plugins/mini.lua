@@ -11,6 +11,9 @@ return {
     -- - sr)'  - [S]urround [R]eplace [)] [']
     require('mini.surround').setup()
 
+    -- autopairs
+    require('mini.pairs').setup()
+
     -- indent line
     require('mini.indentscope').setup()
   end,

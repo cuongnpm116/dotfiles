@@ -1,3 +1,4 @@
+vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
 local glb = vim.g
 
 local ignoreDir =

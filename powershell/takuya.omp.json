@@ -101,9 +101,7 @@
           "template": "❯{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "foreground": "#e0f8ff",
           "type": "exit",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#ef5350{{ end }}"
-          ]
+          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"]
         }
       ],
       "newline": true
