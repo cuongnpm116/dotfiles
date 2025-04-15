@@ -8,8 +8,8 @@ return {
   lazy = false,
   priority = 1000,
   opts = {
-    style = 'night',
-    transparent = true,
+    style = 'day',
+    transparent = false,
     styles = {
       sidebars = 'transparent',
       floats = 'transparent',

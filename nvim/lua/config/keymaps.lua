@@ -39,13 +39,20 @@ map.set('v', '<', '<gv')
 map.set('v', '>', '>gv')
 
 -- up/down in visual mode
-vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
-vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+map.set('v', 'J', ":m '>+1<CR>gv=gv")
+map.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+map.set('n', 'J', 'mzJ`z')
 
 -- diagnostic
-map.set('n', '[d', vim.diagnostic.goto_prev)
-map.set('n', ']d', vim.diagnostic.goto_next)
+map.set('n', '[d', function()
+  vim.diagnostic.jump({ count = -1, float = true })
+end)
+map.set('n', ']d', function()
+  vim.diagnostic.jump({ count = 1, float = true })
+end)
+
 map.set('n', '<leader>qf', vim.diagnostic.setloclist) -- quick fix list
 
 -- close buffer
-map.set('n', '<leader>bd', '<cmd>bd<cr>')
+map.set('n', '<leader>bd', '<cmd>bd!<cr>')
