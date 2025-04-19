@@ -1,7 +1,6 @@
 local glb = vim.g
 
-local ignoreDir =
-  '.*\\.swp$,\\~$,\\.DS_Store,^node_modules/,^\\.git/,^obj/,^bin/,^.vs/,^.github/'
+local ignoreDir = '.*\\.swp$,\\~$,\\.DS_Store,^node_modules/,^\\.git/,^obj/,^bin/,^.vs/,^.github/'
 
 glb.netrw_list_hide = ignoreDir
 glb.netrw_banner = 0

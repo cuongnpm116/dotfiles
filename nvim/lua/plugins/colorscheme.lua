@@ -5,10 +5,10 @@ end
 
 return {
   'folke/tokyonight.nvim',
-  lazy = false,
+  lazy = true,
   priority = 1000,
   opts = {
-    style = 'day',
+    style = 'night',
     transparent = false,
     styles = {
       sidebars = 'transparent',
