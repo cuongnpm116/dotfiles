@@ -108,8 +108,24 @@ return {
       eslint = {},
       html = {},
       jsonls = {},
-      omnisharp = {},
       sqlls = {},
+      omnisharp = {
+        handlers = {
+          ['textDocument/definition'] = function(...)
+            return require('omnisharp_extended').handler(...)
+          end,
+        },
+        keys = {
+          {
+            'gd',
+            require('omnisharp_extended').lsp_definitions(),
+            desc = 'Goto Definition',
+          },
+        },
+        enable_roslyn_analyzers = true,
+        organize_imports_on_format = true,
+        enable_import_completion = true,
+      },
       clangd = {},
       gopls = {},
       pyright = {},
