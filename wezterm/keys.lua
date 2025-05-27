@@ -2,13 +2,11 @@ local wezterm = require('wezterm')
 local act = wezterm.action
 
 return {
-  leader = { key = 'b', mods = 'CTRL' },
+  leader = { key = 'b', mods = 'CTRL', timeout_milliseconds = 1000 },
   keys = {
-    -- Toggle fullscreen
-    {
-      key = 'F11',
-      action = act.ToggleFullScreen,
-    },
+    -- Tabs stick with the default
+    -- Ctrl + Shift + t to open new tab
+    -- Ctrl + Shift + w to close tab
     -- Splits
     {
       key = '|',

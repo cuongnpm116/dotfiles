@@ -5,6 +5,8 @@ import-module terminal-icons
 Import-Module PSFzf
 
 oh-my-posh init pwsh --config "$env:UserProfile\.config\powershell\takuya.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:UserProfile\.config\powershell\cuongnpm.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/catppuccin_latte.omp.json" | Invoke-Expression
 
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
