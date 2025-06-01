@@ -64,8 +64,8 @@
           "type": "node",
           "style": "diamond",
           "leading_diamond": " \ue0b6",
-          "trailing_diamond": "\ue0b4",
-          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+          "trailing_diamond": " \ue0b4",
+          "template": "\ue718 {{ if .PackageManagerIcon }} {{ .PackageManagerIcon }} {{ end }} {{ .Full }}",
           "properties": {
             "fetch_package_manager": true,
             "npm_icon": " <#cc3a3a>\ue5fa</> ",

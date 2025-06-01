@@ -3,3 +3,5 @@
 /nvim/lazy-lock.json
 /.glzr/glazewm/errors.log
 *.pkgdef
+/github-copilot/
+/glab-cli/

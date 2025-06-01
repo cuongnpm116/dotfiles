@@ -1,4 +1,4 @@
-local wezterm = require('wezterm')
+local wezterm = require('wezterm') --[[@as Wezterm]]
 local keys = require('keys')
 local background = require('background')
 local events = require('events')
@@ -30,5 +30,4 @@ config.keys = keys.keys
 if events.init then
   events.init()
 end
-
 return config
