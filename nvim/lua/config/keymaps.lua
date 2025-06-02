@@ -16,8 +16,6 @@ map.set('n', 'N', 'Nzzzv')
 
 -- window management
 map.set('n', '<leader>xs', '<cmd>close<cr>')
-map.set('n', '<leader>vs', '<cmd>vsplit<cr>')
-map.set('n', '<leader>hs', '<cmd>split<cr>')
 
 -- stay in visual mode while indenting
 map.set('v', '<', '<gv')

@@ -13,11 +13,7 @@ config.use_fancy_tab_bar = false
 
 config.color_scheme = 'tokyonight_night'
 
-config.colors = {
-  background = 'white',
-}
-
--- config.background = background
+config.background = background
 
 -- use background image -> no need for window transparent
 -- config.window_background_opacity = 0.75
