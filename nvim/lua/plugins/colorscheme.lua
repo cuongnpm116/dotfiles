@@ -31,7 +31,7 @@ return {
           }
         end,
       })
-      ColorMyPencils()
+      -- ColorMyPencils()
     end,
   },
   {
@@ -46,7 +46,7 @@ return {
         disable_background = true, -- disable background
         disable_float_background = true, -- disable background for floats
       })
-      -- vim.cmd('colorscheme poimandres')
+      vim.cmd('colorscheme poimandres')
       vim.cmd([[
         highlight LspReferenceText guibg=#3b4261
         highlight LspReferenceRead guibg=#3b4261
