@@ -2,6 +2,8 @@ vim.g.snacks_animate = false
 
 local opt = vim.opt
 
+opt.fileformat = 'unix'
+
 opt.colorcolumn = '80,120'
 
 opt.cursorline = false
