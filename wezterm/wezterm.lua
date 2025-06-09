@@ -11,9 +11,7 @@ config.hide_tab_bar_if_only_one_tab = false
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 
-config.color_scheme = 'tokyonight_night'
-
-config.background = background
+-- config.background = background
 
 -- use background image -> no need for window transparent
 -- config.window_background_opacity = 0.75
