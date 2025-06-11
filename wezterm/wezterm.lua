@@ -13,6 +13,8 @@ config.use_fancy_tab_bar = false
 
 -- config.background = background
 
+config.color_scheme = 'Catppuccin Latte'
+
 -- use background image -> no need for window transparent
 -- config.window_background_opacity = 0.75
 
