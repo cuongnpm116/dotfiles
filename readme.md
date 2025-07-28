@@ -12,7 +12,9 @@ installed by default on most linux distro. use your package manager to install
 
 ### Stow
 
+```
 sudo apt install stow
+```
 
 ## Installation
 

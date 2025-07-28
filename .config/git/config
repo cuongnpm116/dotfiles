@@ -1,0 +1,14 @@
+[user]
+	name = Cuong Nguyen
+	email = cuongnpm116@gmail.com
+[init]
+	defaultBranch = main
+[credential "https://git.minvoice.com.vn"]
+	helper = 
+	helper = !/usr/bin/glab auth git-credential
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
