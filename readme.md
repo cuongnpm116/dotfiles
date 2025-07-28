@@ -1,0 +1,2 @@
+- dotfiles for linux
+- use stow for symlink
