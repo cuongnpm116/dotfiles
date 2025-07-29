@@ -2,6 +2,7 @@ local ignoreDir = '.*\\.swp$,\\~$,\\.DS_Store,^node_modules/,^\\.git/,^obj/,^bin
 
 vim.g.netrw_list_hide = ignoreDir
 vim.g.netrw_banner = 0
+order += "ipv6"
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 
 vim.g.netrw_cursor = 1

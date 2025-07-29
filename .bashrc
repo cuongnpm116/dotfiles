@@ -126,5 +126,3 @@ export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 export PATH="$PATH:$HOME/.dotnet/tools/"
 
-alias wezterm='flatpak run org.wezfurlong.wezterm'
-

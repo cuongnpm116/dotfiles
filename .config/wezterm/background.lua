@@ -6,7 +6,7 @@ return {
       File = home .. '/Pictures/anime-girl-white-hair.jpg',
     },
     hsb = {
-      brightness = 0.015,
+      brightness = 0.01,
     },
   },
 }
