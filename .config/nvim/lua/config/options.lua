@@ -1,16 +1,14 @@
-local ignoreDir = '.*\\.swp$,\\~$,\\.DS_Store,^node_modules/,^\\.git/,^obj/,^bin/,^.vs/,^.github/'
+local ignoreDir = ".*\\.swp$,\\~$,\\.DS_Store,^node_modules/,^\\.git/,^obj/,^bin/,^.vs/,^.github/"
 
 vim.g.netrw_list_hide = ignoreDir
 vim.g.netrw_banner = 0
-order += "ipv6"
-vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
-
+vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
 vim.g.netrw_cursor = 1
 
 vim.g.have_nerd_font = true
 
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- line number
 vim.o.number = true
@@ -41,7 +39,7 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 -- show diagnostic signs, git status, etc. left side of line number
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 vim.o.updatetime = 50
 vim.o.timeoutlen = 1000
@@ -49,4 +47,3 @@ vim.o.timeoutlen = 1000
 vim.o.termguicolors = true
 
 vim.o.wrap = false
-
