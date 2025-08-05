@@ -1,7 +1,7 @@
 set $mod Mod4
 
 # font pango:monospace 8
-font pango:CaskaydiaCove Nerd Font 8
+font pango:JetBrainsMono Nerd Font Mono 10
 
 for_window [class="^.*"] border pixel 1
 # class                 border  backgr. text    indicator child_border
