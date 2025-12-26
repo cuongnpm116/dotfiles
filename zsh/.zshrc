@@ -3,7 +3,7 @@ alias grep='grep --color=auto'
 
 export MANPAGER='nvim +Man!'
 
-PROMPT=$'\n[%n@%m %~]\n❯ '
+PROMPT=$'[%n@%m %~]\n❯ '
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
