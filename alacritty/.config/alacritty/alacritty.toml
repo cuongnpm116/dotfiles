@@ -1,8 +1,5 @@
-[env]
-TERM = "xterm-256color"
-
 [general]
-import = ["themes/noctalia.toml"]
+import = ["./tokyonight.toml"]
 
 [window]
 padding = { x = 12, y = 12 }
