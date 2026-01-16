@@ -2,13 +2,14 @@ import Quickshell
 import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Layouts
-import Quickshell.Io
+import qs.services
+import qs.config
 
 PanelWindow {
     anchors.top: true
     anchors.left: true
     anchors.right: true
-    implicitHeight: 30
+    implicitHeight: 40
     color: "#1a1b26"
 
     RowLayout {
@@ -20,7 +21,7 @@ PanelWindow {
             spacing: 8
 
             Repeater {
-                model: 9
+                model: Hyprland.workspaces
 
                 Rectangle {
                     radius: 6
@@ -55,14 +56,7 @@ PanelWindow {
             id: clock
             color: "#ffffff"
             font.pixelSize: 13
-            Layout.alignment: Qt.AlignVCenter
-
-            Timer {
-                interval: 1000
-                running: true
-                repeat: true
-                onTriggered: clock.text = Qt.formatDateTime(new Date(), "HH:mm")
-            }
+            text: Time.format(Appearance.clockFormat)
         }
     }
 }
