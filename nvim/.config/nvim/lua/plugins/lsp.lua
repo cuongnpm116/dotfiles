@@ -11,7 +11,6 @@ return {
           'lua_ls',
           'pyright',
           'prettierd',
-          'qmlls',
           -- formatter
           'stylua', -- lua
           'black', -- python

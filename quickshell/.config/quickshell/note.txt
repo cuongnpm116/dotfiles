@@ -1,3 +1,0 @@
-2 main window types:
-	- PanelWindow: bars, widgets, overlays (cua so gan vao goc man hinh)
-	- FloatingWindow: standard desktop windows (cua so noi?)
